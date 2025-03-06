@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado / Menú de Navegación -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="soporte.html">Soporte</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="#" id="view-cart-btn">Carrito</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección de Búsqueda -->
+  <section class="search-section">
+    <input type="text" id="search-input" placeholder="Buscar producto...">
+  </section>
+
+  <!-- Sección de Productos -->
+  <section class="productos-section">
+    <h2>Nuestros Productos</h2>
+    <div class="gallery">
+      <!-- Producto 1 -->
+      <div class="product-item">
+        <img src="64081ea0-9d46-11ef-bfff-7ba57dd7df36.jpg" alt="Laptop" data-title="Laptop">
+        <p>Laptop</p>
+        <button class="add-to-cart" data-product="Laptop" data-price="1999.99" data-img="64081ea0-9d46-11ef-bfff-7ba57dd7df36.jpg">
+          Agregar al Carrito
+        </button>
+      </div>
+      <!-- Producto 2 -->
+      <div class="product-item">
+        <img src="61ZjlBOp+rL.jpg" alt="Smartwatch" data-title="Smartwatch">
+        <p>Smartwatch</p>
+        <button class="add-to-cart" data-product="Smartwatch" data-price="299.99" data-img="61ZjlBOp+rL.jpg">
+          Agregar al Carrito
+        </button>
+      </div>
+      <!-- Producto 3 -->
+      <div class="product-item">
+        <img src="full_image-1.webp" alt="Audífonos" data-title="Audífonos">
+        <p>Audífonos</p>
+        <button class="add-to-cart" data-product="Audífonos" data-price="399.99" data-img="full_image-1.webp">
+          Agregar al Carrito
+        </button>
+      </div>
+      <!-- Producto 4 -->
+      <div class="product-item">
+        <img src="D_NQ_NP_731135-MLA79227832577_092024-O.webp" alt="telefono" data-title="telefono">
+        <p>telefono samsung</p>
+        <button class="add-to-cart" data-product="telefono" data-price="399.99" data-img="D_NQ_NP_731135-MLA79227832577_092024-O.webp">
+          Agregar al Carrito 
+        </button>
+      </div>
+      <!-- Producto 5 -->
+      <div class="product-item">
+        <img src="images.jpg" alt="telefono" data-title="telefono">
+        <p>telefono apple</p>
+        <button class="add-to-cart" data-product="telefono" data-price="399.99" data-img="images.jpg">
+          Agregar al Carrito
+        </button>
+      </div>
+      <!-- Producto 6 -->
+      <div class="product-item">
+        <img src="14_ultra_xiaomi_1723100712002.webp" alt="telefono" data-title="telefono">
+        <p>telefono xiaomi</p>
+        <button class="add-to-cart" data-product="telefono" data-price="333.99" data-img="14_ultra_xiaomi_1723100712002.webp">
+          Agregar al Carrito
+        </button>         
+      </div>
+      <!-- Agrega más productos según necesites -->
+    </div>
+  </section>
+
+  <!-- Modal de Detalle del Producto -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img id="modal-image" src="" alt="Detalle del producto">
+      <h3 id="modal-title">Título del Producto</h3>
+      <p id="modal-description">Aquí va la descripción del producto.</p>
+      <p id="modal-price">$0.00</p>
+    </div>
+  </div>
+
+  <!-- Modal del Carrito -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-cart">&times;</span>
+      <h3>Carrito de Compras</h3>
+      <div id="cart-items"></div>
+      <p id="cart-total">Total: $0.00</p>
+      <button id="checkout-btn">Finalizar Compra</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mi Proyecto Inspirado en Apple</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
